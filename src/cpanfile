@@ -1,1 +1,2 @@
 requires 'HTTP::API::Client';
+requires 'LWP::Protocol::https';
