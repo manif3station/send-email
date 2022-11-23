@@ -1,2 +1,3 @@
 cd /app/src/plugins/web-send-email;
-cpanm --noinstall --installdeps .
+HOME=/tmp cpanm --noinstall --installdeps .
+rm -fr /tmp/.cpanm
