@@ -1,2 +1,2 @@
-HOME=/tmp cpanm --noinstall --installdeps .
+HOME=/tmp cpanm --notest --installdeps .
 rm -fr /tmp/.cpanm
