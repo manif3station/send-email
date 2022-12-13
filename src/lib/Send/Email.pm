@@ -52,8 +52,6 @@ sub email {
         content          => \@attachment
     );
 
-    $DB::single = 2;
-
     my $resp = HTTP::API::Client->new(
         base_url     => URI->new('https://api.sendgrid.com/v3/mail'),
         content_type => 'application/json',
