@@ -52,6 +52,8 @@ sub email {
         content          => \@attachment
     );
 
+    local $ENV{DEBUG_IN_OUT} = 1 if $ENV{DEBUG_SEND_EMAIL};
+
     my $resp = HTTP::API::Client->new(
         base_url     => URI->new('https://api.sendgrid.com/v3/mail'),
         content_type => 'application/json',
